@@ -1,0 +1,83 @@
+This is a sender server
+starting up on localhost port 10000
+Router table [0, 10001]
+Listen for incoming connections
+waiting for a connection
+connection from ('127.0.0.1', 42066)
+received b'{"message": "First message", "number": -1, "sender": 10000, "receiver": 10003, "type": 0}'
+waiting for more data
+received b''
+no data from ('127.0.0.1', 42066)
+Message received: {'message': 'First message', 'number': -1, 'sender': 10000, 'receiver': 10003, 'type': 0}
+Sending package 0 to 10001
+Sending to 10001
+waiting for a connection
+connection from ('127.0.0.1', 38376)
+received b'{"message": "message received 0", "sender": 10003, "number": 1, "receiver": 10000, "type": 1}'
+waiting for more data
+received b''
+no data from ('127.0.0.1', 38376)
+Message received: {'message': 'message received 0', 'sender': 10003, 'number': 1, 'receiver': 10000, 'type': 1}
+Deleted message: {'message': 'Hello 0', 'number': 0, 'sender': 10000, 'receiver': 10003, 'type': 0}
+Window size: 2
+Sending package 1 to 10001
+Sending to 10001
+Sending package 2 to 10001
+Sending to 10001
+waiting for a connection
+connection from ('127.0.0.1', 37822)
+received b'{"message": "message received 1", "sender": 10003, "number": 2, "receiver": 10000, "type": 1}'
+waiting for more data
+received b''
+no data from ('127.0.0.1', 37822)
+Message received: {'message': 'message received 1', 'sender': 10003, 'number': 2, 'receiver': 10000, 'type': 1}
+Deleted message: {'message': 'Hello 2', 'number': 2, 'sender': 10000, 'receiver': 10003, 'type': 0}
+Window size: 3
+Sending package 1 to 10001
+Sending to 10001
+Sending package 3 to 10001
+Sending to 10001
+Sending package 4 to 10001
+Sending to 10001
+waiting for a connection
+connection from ('127.0.0.1', 37836)
+received b'{"message": "message received 2", "sender": 10003, "number": 3, "receiver": 10000, "type": 1}'
+waiting for more data
+received b''
+no data from ('127.0.0.1', 37836)
+Message received: {'message': 'message received 2', 'sender': 10003, 'number': 3, 'receiver': 10000, 'type': 1}
+Deleted message: {'message': 'Hello 4', 'number': 4, 'sender': 10000, 'receiver': 10003, 'type': 0}
+Window size: ]
+Sending package 5 to 10001
+Sending to 10001
+Sending package 6 to 10001
+Sending to 10001
+waiting for a connection
+connection from ('127.0.0.1', 42474)
+received b'{"message": "message received 1", "sender": 10003, "number": 2, "receiver": 10000, "type": 1}'
+waiting for more data
+received b''
+no data from ('127.0.0.1', 42474)
+Message received: {'message': 'message received 1', 'sender': 10003, 'number': 2, 'receiver': 10000, 'type': 1}
+Deleted message: {'message': 'Hello 3', 'number': 3, 'sender': 10000, 'receiver': 10003, 'type': 0}
+Window size: 5
+Sending package 1 to 10001
+Sending to 10001
+Sending package 7 to 10001
+Sending to 10001
+Sending package 8 to 10001
+Sending to 10001
+waiting for a connection
+connection from ('127.0.0.1', 42486)
+received b'{"message": "message received 3", "sender": 10003, "number": 4, "receiver": 10000, "type": 1}'
+waiting for more data
+received b''
+no data from ('127.0.0.1', 42486)
+Message received: {'message': 'message received 3', 'sender': 10003, 'number': 4, 'receiver': 10000, 'type': 1}
+Deleted message: {'message': 'Hello 7', 'number': 7, 'sender': 10000, 'receiver': 10003, 'type': 0}
+Window size: 6
+Sending package 9 to 10001
+Sending to 10001
+Sending package 10 to 10001
+Sending to 10001
+waiting for a connection
