@@ -1,83 +1,65 @@
-This is a sender server
-starting up on localhost port 10000
-Router table [0, 10001]
 Listen for incoming connections
-waiting for a connection
-connection from ('127.0.0.1', 42066)
-received b'{"message": "First message", "number": -1, "sender": 10000, "receiver": 10003, "type": 0}'
-waiting for more data
-received b''
-no data from ('127.0.0.1', 42066)
-Message received: {'message': 'First message', 'number': -1, 'sender': 10000, 'receiver': 10003, 'type': 0}
-Sending package 0 to 10001
-Sending to 10001
-waiting for a connection
-connection from ('127.0.0.1', 38376)
-received b'{"message": "message received 0", "sender": 10003, "number": 1, "receiver": 10000, "type": 1}'
-waiting for more data
-received b''
-no data from ('127.0.0.1', 38376)
-Message received: {'message': 'message received 0', 'sender': 10003, 'number': 1, 'receiver': 10000, 'type': 1}
-Deleted message: {'message': 'Hello 0', 'number': 0, 'sender': 10000, 'receiver': 10003, 'type': 0}
-Window size: 2
-Sending package 1 to 10001
-Sending to 10001
-Sending package 2 to 10001
-Sending to 10001
-waiting for a connection
-connection from ('127.0.0.1', 37822)
-received b'{"message": "message received 1", "sender": 10003, "number": 2, "receiver": 10000, "type": 1}'
-waiting for more data
-received b''
-no data from ('127.0.0.1', 37822)
-Message received: {'message': 'message received 1', 'sender': 10003, 'number': 2, 'receiver': 10000, 'type': 1}
-Deleted message: {'message': 'Hello 2', 'number': 2, 'sender': 10000, 'receiver': 10003, 'type': 0}
-Window size: 3
-Sending package 1 to 10001
-Sending to 10001
-Sending package 3 to 10001
-Sending to 10001
-Sending package 4 to 10001
-Sending to 10001
-waiting for a connection
-connection from ('127.0.0.1', 37836)
-received b'{"message": "message received 2", "sender": 10003, "number": 3, "receiver": 10000, "type": 1}'
-waiting for more data
-received b''
-no data from ('127.0.0.1', 37836)
-Message received: {'message': 'message received 2', 'sender': 10003, 'number': 3, 'receiver': 10000, 'type': 1}
-Deleted message: {'message': 'Hello 4', 'number': 4, 'sender': 10000, 'receiver': 10003, 'type': 0}
-Window size: ]
-Sending package 5 to 10001
-Sending to 10001
-Sending package 6 to 10001
-Sending to 10001
-waiting for a connection
-connection from ('127.0.0.1', 42474)
-received b'{"message": "message received 1", "sender": 10003, "number": 2, "receiver": 10000, "type": 1}'
-waiting for more data
-received b''
-no data from ('127.0.0.1', 42474)
-Message received: {'message': 'message received 1', 'sender': 10003, 'number': 2, 'receiver': 10000, 'type': 1}
-Deleted message: {'message': 'Hello 3', 'number': 3, 'sender': 10000, 'receiver': 10003, 'type': 0}
-Window size: 5
-Sending package 1 to 10001
-Sending to 10001
-Sending package 7 to 10001
-Sending to 10001
-Sending package 8 to 10001
-Sending to 10001
-waiting for a connection
-connection from ('127.0.0.1', 42486)
-received b'{"message": "message received 3", "sender": 10003, "number": 4, "receiver": 10000, "type": 1}'
-waiting for more data
-received b''
-no data from ('127.0.0.1', 42486)
-Message received: {'message': 'message received 3', 'sender': 10003, 'number': 4, 'receiver': 10000, 'type': 1}
-Deleted message: {'message': 'Hello 7', 'number': 7, 'sender': 10000, 'receiver': 10003, 'type': 0}
-Window size: 6
-Sending package 9 to 10001
-Sending to 10001
-Sending package 10 to 10001
-Sending to 10001
-waiting for a connection
+Received b'{"message": "First message", "number": -1, "sender": 10000, "receiver": 10003, "type": 0}' from ('127.0.0.1', 59116)
+        Sending to 10001
+ The last package (0) was sent
+Received b'{"message": "message received 0", "sender": 10003, "number": 1, "receiver": 10000, "type": 1, "window_size": 1}' from ('127.0.0.1', 59122)
+        The last package (0) was received
+The time was 4.002844333648682 seconds
+The window size is 2
+        Sending to 10001
+        Sending to 10001
+ The last package (3) was sent
+Received b'{"message": "message received 3", "sender": 10003, "number": 4, "receiver": 10000, "type": 1, "window_size": 2}' from ('127.0.0.1', 40130)
+        The last package (3) was received
+The time was 6.003159999847412 seconds
+The window size is 1
+        Sending to 10001
+ The last package (3) was sent
+Received b'{"message": "message received 3", "sender": 10003, "number": 4, "receiver": 10000, "type": 1, "window_size": 1}' from ('127.0.0.1', 50716)
+        The last package (3) was received
+The time was 7.002561092376709 seconds
+The window size is 1
+        Sending to 10001
+ The last package (4) was sent
+Received b'{"message": "message received 4", "sender": 10003, "number": 5, "receiver": 10000, "type": 1, "window_size": 1}' from ('127.0.0.1', 50718)
+        The last package (4) was received
+The time was 4.002779722213745 seconds
+The window size is 2
+        Sending to 10001
+        Sending to 10001
+ The last package (7) was sent
+Received b'{"message": "message received 7", "sender": 10003, "number": 8, "receiver": 10000, "type": 1, "window_size": 2}' from ('127.0.0.1', 50728)
+        The last package (7) was received
+The time was 2.00313663482666 seconds
+The window size is 4
+        Sending to 10001
+        Sending to 10001
+        Sending to 10001
+        Sending to 10001
+ The last package (13) was sent
+Received b'{"message": "message received 13", "sender": 10003, "number": 14, "receiver": 10000, "type": 1, "window_size": 4}' from ('127.0.0.1', 60850)
+        The last package (13) was received
+The time was 6.004263877868652 seconds
+The window size is 2
+        Sending to 10001
+        Sending to 10001
+ The last package (13) was sent
+Received b'{"message": "message received 13", "sender": 10003, "number": 14, "receiver": 10000, "type": 1, "window_size": 2}' from ('127.0.0.1', 34150)
+        The last package (13) was received
+The time was 8.00332498550415 seconds
+The window size is 1
+        Sending to 10001
+ The last package (13) was sent
+Received b'{"message": "message received 13", "sender": 10003, "number": 14, "receiver": 10000, "type": 1, "window_size": 1}' from ('127.0.0.1', 34152)
+        The last package (13) was received
+The time was 2.0021979808807373 seconds
+The window size is 2
+        Sending to 10001
+        Sending to 10001
+ The last package (16) was sent
+Received b'{"message": "message received 16", "sender": 10003, "number": 17, "receiver": 10000, "type": 1, "window_size": 2}' from ('127.0.0.1', 44624)
+        The last package (16) was received
+The time was 6.004040718078613 seconds
+The window size is 1
+        Sending to 10001
+ The last package (16) was sent
