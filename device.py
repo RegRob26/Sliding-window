@@ -1,3 +1,6 @@
+"""
+This file is used to run and configure the server from the command line-args
+"""
 from server import Server
 import sys
 import argparse

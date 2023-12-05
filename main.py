@@ -1,10 +1,12 @@
 from client import Client
 from server import Server
 import json
-if __name__ == '__main__':
 
-    window_size = 8
-    window_buffer = []
+"""
+    Execute this file after running all the servers
+    This script will send a message to the first server to start the communication
+"""
+if __name__ == '__main__':
 
     messages = {
         'message': 'First message',
@@ -15,10 +17,7 @@ if __name__ == '__main__':
     }
 
     # Create a TCP/IP socket
-    # parser = argparse.ArgumentParser()
+    # The second argument is the port of the server
     client = Client('localhost', 10000, 'client1')
-
     data = json.dumps(messages).encode('utf-8')
     client.send(data)
-
-    # client = Client('localhost', 10001, 'client2')
